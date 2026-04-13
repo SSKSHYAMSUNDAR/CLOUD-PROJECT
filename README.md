@@ -31,8 +31,6 @@ A complete **CI/CD pipeline** is implemented using Jenkins to automate the build
 
 # 2️⃣ Architecture Diagram
 
-![Architecture Diagram](architecture.png)
-
 ### 🔍 Description
 
 * Developer pushes code to GitHub

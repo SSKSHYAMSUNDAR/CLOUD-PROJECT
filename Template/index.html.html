@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Entry</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      background: rgba(255,255,255,0.9);
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px;
+    }
+
+    button {
+      padding: 10px;
+      width: 100%;
+      background: green;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>🎓 Student Entry</h2>
+
+  <form action="/students" method="post">
+    <input name="student_id" placeholder="Student ID" required>
+    <input name="name" placeholder="Name" required>
+    <input name="age" type="number" placeholder="Age" required>
+    <input name="course" placeholder="Course" required>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

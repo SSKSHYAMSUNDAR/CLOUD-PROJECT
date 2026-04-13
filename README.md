@@ -30,6 +30,40 @@ A complete **CI/CD pipeline** is implemented using Jenkins to automate the build
 ---
 
 # 2️⃣ Architecture Diagram
+[ Developer ]
+      |
+      v
+[ Code Push to GitHub ]
+      |
+      v
+[ GitHub Repository ]
+      |
+      v
+[ Webhook Trigger ]
+      |
+      v
+[ Jenkins Pipeline ]
+      |
+      ├──> [ Clone Repository ]
+      |
+      ├──> [ Build Docker Image ]
+      |
+      ├──> [ Run Docker Container ]
+      |
+      v
+[ Deploy to AWS EC2 ]
+      |
+      v
+[ Node.js Application Running ]
+      |
+      v
+[ User Access via Browser ]
+      |
+      v
+[ Submit Student Data ]
+      |
+      v
+[ Data Stored in DynamoDB ]
 
 ### 🔍 Description
 

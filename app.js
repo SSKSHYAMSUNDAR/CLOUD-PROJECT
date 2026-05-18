@@ -23,7 +23,7 @@ const TABLE_NAME = process.env.TABLE_NAME || "StudentTable";
 
 // Home route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, '/Template/index.html'));
 });
 
 // Save student

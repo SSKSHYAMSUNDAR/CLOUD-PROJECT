@@ -2,12 +2,11 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clone') {
-            steps {
-                git 'https://github.com/YOUR-USERNAME/student-devops-app.git'
-            }
-        }
+    stage('Clone') {
+    steps {
+        git 'https://github.com/SSKSHYAMSUNDAR/CLOUD-PROJECT.git'
+         }
+      }
 
         stage('Build Docker Image') {
             steps {

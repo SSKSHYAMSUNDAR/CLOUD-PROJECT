@@ -2,11 +2,7 @@
 pipeline {
     agent any
 
-    stage('Clone') {
-    steps {
-        git 'https://github.com/SSKSHYAMSUNDAR/CLOUD-PROJECT.git'
-         }
-      }
+    stages {
 
         stage('Build Docker Image') {
             steps {
@@ -16,8 +12,11 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 80:80 student-app'
+                sh 'docker rm -f student-app-container || true'
+                sh 'docker run -d -p 80:80 --name student-app-container student-app'
             }
         }
+
     }
 }
+
